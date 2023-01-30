@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        cat london.txt
+        sh 'cat london.txt'
       }
     }
     stage('Test') {
       steps {
         echo 'testing'
-        cat sample
+        sh 'cat sample'
       }
     }
     stage('Deploy') {
